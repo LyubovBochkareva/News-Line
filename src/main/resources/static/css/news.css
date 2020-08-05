@@ -1,0 +1,45 @@
+.pagination {
+    line-height: 150%;
+}
+
+.pagination > span {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+div img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input {
+    margin-left: 5px;
+    background: padding-box;
+}
+
+input:invalid + span:after {
+    color: red;
+    content: "\2612";
+    padding-left: 5px;
+}
+
+input:valid + span:after {
+    color: green;
+    content: "\2611";
+    padding-left: 5px;
+}
+
+div#messageError {
+    color: red;
+    font-weight: bold;
+}
+
+div#confirmation {
+    color: green;
+    font-weight: bold;
+}

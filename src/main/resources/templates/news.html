@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>News</title>
+    <link rel="icon" href="data:;base64,=">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/news.css"/>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data" id="addNews">
+    <label>Heading<input type="text" name="heading" required/><span/></label>
+    <label>Text news<input type="text" name="text" required/><span/></label>
+    <input type="file" accept="image/*" name="file" id="filename"/>
+    <input type="submit" value="Send" id="btnSubmit"/>
+</form>
+<div id="confirmation" class="mfp-hide"></div>
+<div id="messageError" class="mfp-hide"></div>
+<p/>
+<div id="container"></div>
+<label>
+    <select id="itemsOnPage">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+    </select>
+</label>
+<div class="pagination"></div>
+<script type="text/javascript" src="/js/news.js"></script>
+</body>
+</html>
+
